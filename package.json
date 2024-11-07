@@ -2,10 +2,10 @@
   "name": "score-tracker",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "echo 'No build step needed' && exit 0"
+      "start": "parcel ./*.html",
+    "build": "parcel build ./*.html"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/DesmonFur/score-tracker/issues"
   },
-  "homepage": "https://github.com/DesmonFur/score-tracker#readme"
+  "homepage": "https://github.com/DesmonFur/score-tracker#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
 }
