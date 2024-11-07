@@ -1,41 +1,37 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
-                
-    </head>
-    <body>
-        <div class="container">
-            <div class="main">
-                
-            <div class="team-section">
-                <h3 class="team-title">HOME</h3>
-                <p id="home-score" class='team-score'> 0 </p>
-                <div class="scores"> 
-                <button onclick="addOne('home')" class="score-btn"> +1 </button>
-                <button onclick="addTwo('home')" class="score-btn"> +2 </button>
-                <button  onclick="addThree('home')" class="score-btn"> +3 </button>
-                    
-                </div>
-                
-            </div>
-            <div class="team-section">
-                <h3 class="team-title">GUEST</h3>
-                <p id="guest-score" class='team-score'> 0 </p>
-                <div class="scores"> 
-                <button onclick="addOne('guest')" class="score-btn"> +1 </button>
-                <button  onclick="addTwo('guest')"class="score-btn"> +2 </button>
-                <button onclick="addThree('guest')" class="score-btn"> +3 </button>
-                    
-                </div>
-            </div>
-                
-            </div>
-            <div class="actions">
-            <button onclick="newGame()" id="newgame-btn">New Game</button>
-                
-            </div>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/cursed-timer-ulil"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="team-section">
+          <h3 class="team-title">HOME</h3>
+          <p id="home-score" class="team-score">0</p>
+          <div class="scores">
+            <button onclick="addOne('home')" class="score-btn">+1</button>
+            <button onclick="addTwo('home')" class="score-btn">+2</button>
+            <button onclick="addThree('home')" class="score-btn">+3</button>
+          </div>
         </div>
-        <script src="index.js"></script>
-    </body>
+        <div class="team-section">
+          <h3 class="team-title">GUEST</h3>
+          <p id="guest-score" class="team-score">0</p>
+          <div class="scores">
+            <button onclick="addOne('guest')" class="score-btn">+1</button>
+            <button onclick="addTwo('guest')" class="score-btn">+2</button>
+            <button onclick="addThree('guest')" class="score-btn">+3</button>
+          </div>
+        </div>
+      </div>
+      <div class="actions">
+        <button onclick="newGame()" id="newgame-btn">New Game</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
